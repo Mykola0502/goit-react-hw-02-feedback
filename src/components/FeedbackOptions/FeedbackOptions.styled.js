@@ -20,8 +20,10 @@ export const Button = styled.button`
   font-weight: 700;
   text-transform: capitalize;
   cursor: pointer;
+  transition: background-color 250ms ease, box-shadow 250ms ease;
 
-  :hover {
+  :hover,
+  :focus {
     background-color: ${({ theme }) => theme.colors.hoverColor};
     box-shadow: ${({ theme }) =>
       `0px 4px 10px 4px ${theme.colors.shadowColor}`};
